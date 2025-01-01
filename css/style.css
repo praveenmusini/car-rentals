@@ -1,0 +1,311 @@
+
+@font-face {
+    font-family: 'Hamburg Hand';
+    src :   url('../fonts/HamburgHand-Regular.otf') format('opentype'), 
+            url('../fonts/HamburgHand-Light.otf') format('opentype'),
+            url('../fonts/HamburgHand-Bold.otf') format('opentype');
+}
+body, html{
+    width: 100vw;
+    overflow-x: hidden;
+}
+body {
+    /* padding: 0;
+    margin: 0; */
+    background: #111111 !important;
+}
+/* html { scroll-behavior: smooth; } */
+
+a { text-decoration: none; }
+p { margin: 0; }
+ul { list-style: none; padding: 0; margin: 0;}
+
+/* FONT SIZES */
+.font-9 { font-size: 9px !important; }
+.font-10 { font-size: 10px !important; }
+.font-11 { font-size: 11px !important; }
+.font-12 { font-size: 12px !important; }
+.font-13 { font-size: 13px !important; }
+.font-14 { font-size: 14px !important; }
+.font-15 { font-size: 15px !important; }
+.font-16 { font-size: 16px !important; }
+.font-17 { font-size: 17px !important; }
+.font-18 { font-size: 18px !important; }
+.font-19 { font-size: 19px !important; }
+.font-20 { font-size: 20px !important; }
+.font-21 { font-size: 21px !important; }
+.font-22 { font-size: 22px !important; }
+.font-23 { font-size: 23px !important; }
+.font-24 { font-size: 24px !important; }
+.font-25 { font-size: 25px !important; }
+.font-26 { font-size: 26px !important; }
+.font-27 { font-size: 27px !important; }
+.font-28 { font-size: 28px !important; }
+.font-29 { font-size: 28px !important; }
+.font-30 { font-size: 30px !important; }
+.font-31 { font-size: 31px !important; }
+.font-32 { font-size: 32px !important; }
+.font-33 { font-size: 33px !important; }
+.font-80 { font-size: 80px !important; }
+.font-105 { font-size: 105px !important; }
+.font-300 { font-weight: 300 !important; }
+.font-400 { font-weight: 400 !important; }
+.font-500 { font-weight: 500 !important; }
+.font-600 { font-weight: 600 !important; }
+.font-700 { font-weight: 700 !important; }
+.font-800 { font-weight: 800 !important; }
+.font-900 { font-weight: 900 !important; }
+.font-upper { text-transform: uppercase; }
+.font-capital { text-transform: capitalize; }
+.font-italic { font-style: italic; }
+.line-height-1 { line-height: 1 !important; }
+
+/* FONT FAMILIES */
+.family-1 { font-family: 'Hamburg Hand'; }
+.family-2 { font-family: 'IBM Plex Sans', sans-serif; }
+
+/* FONT COLORS */
+.font-orange { color: #DD6635; }
+.font-white { color: white; }
+.font-black { color: #111111; }
+.font-grey { color: #D9D9D9; }
+
+.bg-orange { background-color: #DD6635; border-radius: 20px; padding: 60px 0px;}
+.bg-black { background-color: #323232; border-radius: 20px; padding: 20px 0px;}
+.bg-grey { background-color: #D9D9D9; border-radius: 20px; padding: 20px 0px;}
+
+
+.bgImage{
+    background-image: url('../images/wallpaper.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+    display: block;
+    position: relative;
+}
+.imgMatterBlock{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+}
+.imgMatter{
+    font-size: 100px;
+    color: white;
+    font-family: 'Hamburg Hand';
+    line-height: 1;
+    width: 75%;
+}
+.imgMatter_Sub{
+    font-size: 16px;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1;
+    width: 30%;
+    padding: 10px 0px 10px 0px;
+    font-weight: 500;
+}
+.section-head{
+    font-size: 12px;
+    font-family: 'Hamburg Hand';
+    color: white;
+    padding: 10px 0px;
+    border-bottom:2px solid #323232;
+    font-weight: 700;
+}
+.section-head-2{
+    font-size: 12px;
+    font-family: 'Hamburg Hand';
+    color: white;
+    padding: 10px 0px;
+    border-bottom:2px solid rgba(217, 217, 217, 0.5);
+    font-weight: 700;
+}
+.section-head-3{
+    font-size: 12px;
+    font-family: 'Hamburg Hand';
+    color: #323232;
+    padding: 10px 0px;
+    border-bottom:2px solid #323232;
+    font-weight: 700;
+}
+.title-word{
+    font-size: 80px;
+    color: white;
+    font-family: 'Hamburg Hand';
+    line-height: 1;
+    font-weight: 700;
+}
+.title-word-2 {
+    font-size: 80px;
+    color: #111111;
+    font-family: 'Hamburg Hand';
+    line-height: 1;
+    font-weight: 700;
+}
+ul li.rev-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top : 1px solid #323232;
+    padding: 20px 0px;
+}
+.h-item {
+    margin: 15px 0px;
+    border-top: 1px solid #D9D9D9;
+}
+
+ul li.ben-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top : 1px solid #323232;
+    padding: 20px 0px;
+}
+ul li.f-items {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    border-bottom : 1px solid #323232;
+    padding: 20px 0px;
+}
+ul li.f-items:last-child {
+    border-bottom : none;
+}
+
+/* MENU CSS */
+.nav-link {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Hamburg Hand';
+    line-height: 1;
+    font-weight: 700;
+}
+.nav-link:hover {
+    color: #DD6635;
+}
+.btn-orange {
+    background-color: #DD6635;
+    border: 1px solid #DD6635;
+    outline: none;
+    width: 160px;
+    height: 36px;
+    border-radius: 10px;
+}
+.btn-white {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    width: 160px;
+    height: 36px;
+    border-radius: 10px;
+}
+.button-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Our_images {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.menu_word, .menu_word_1 {
+    background-color: transparent;
+    padding: 10px 15px;
+    margin: 10px 0px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    text-transform: capitalize;
+}
+.menu_word:hover {
+    background-color: #DD6635;
+    color: white;
+}
+.menu_word_1:hover {
+    color: #DD6635;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+       justify-content: space-between;
+       align-items: center;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .button-block{
+        padding: 10px 0px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .btn-orange {
+        margin: 5px 0px;
+    }
+    .Our_images {display: grid; grid-template-columns: auto auto auto auto; gap: 20px; }
+}
+.img_car {
+    max-width: 100%;
+    height: 280px !important;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 640px) {
+    
+    .font-mob-12 { font-size: 12px !important; }
+    .font-mob-13 { font-size: 13px !important; }
+    .font-mob-14 { font-size: 14px !important; }
+    .font-mob-15 { font-size: 15px !important; }
+    .font-mob-16 { font-size: 16px !important; }
+    .font-mob-17 { font-size: 17px !important; }
+    .font-mob-18 { font-size: 18px !important; }
+    .font-mob-19 { font-size: 19px !important; }
+    .font-mob-20 { font-size: 20px !important; }
+    .font-mob-21 { font-size: 21px !important; }
+    .font-mob-22 { font-size: 22px !important; }
+    .font-mob-23 { font-size: 23px !important; }
+    .font-mob-24 { font-size: 24px !important; }
+    .font-mob-25 { font-size: 25px !important; }
+    .font-mob-26 { font-size: 26px !important; }
+    .font-mob-27 { font-size: 27px !important; }
+    .font-mob-28 { font-size: 28px !important; }
+    .font-mob-29 { font-size: 28px !important; }
+    .font-mob-30 { font-size: 30px !important; }
+    .font-mob-31 { font-size: 31px !important; }
+    .font-mob-32 { font-size: 32px !important; }
+    .font-mob-33 { font-size: 33px !important; }
+    .bgImage { background-position: 94%; }
+    .imgMatter { font-size: 56px; width: 100%;}
+    .title-word { font-size: 40px; }
+    .imgMatterBlock {bottom: 55px;}
+    .imgMatter_Sub { width: 100%; }
+    .rev-items { align-items: unset !important;}
+    ul li.ben-items { align-items: unset !important; flex-direction: column !important;}
+    .btn-white, .btn-orange { width: auto; height: auto;}
+    .Our_images {display: grid; grid-template-columns: auto auto auto; gap: 20px; }
+    .font-mob-break { word-break: break-all;}
+}
+
+@media only screen and (max-width: 400px) {
+    .our_int_img { width : 70px }
+}
+
+.img{
+    transition: 1s ease;
+}
+.imgtrans {
+    transform: rotate(180deg);
+}
+.owl-carousel .owl-item img {
+    max-width: 100%;
+    display: block;
+    height: 280px;
+    border-radius: 15px;
+    object-fit: cover;
+}
